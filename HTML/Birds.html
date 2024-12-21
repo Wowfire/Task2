@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Site</title>
+
+    <style>
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            margin: 0;
+
+            padding: 0;
+
+            background-color: #6699CC;
+
+        }
+
+        header {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 20px;
+
+            background-color: #003B6D;
+
+        }
+
+        nav {
+
+            display: flex;
+
+        }
+
+        nav a {
+
+            margin: 0 15px;
+
+            text-decoration: none;
+
+            color: black;
+        }
+
+        .search-bar {
+
+            flex-grow: 1;
+
+            text-align: right;
+
+        }
+
+        .content {
+
+            padding: 20px;
+
+            text-align: center;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <img src="images/Picture1.png" alt="Logo" style="height: 50px;">
+
+        </div>
+
+        <nav>
+
+            <a href="Website.html">Home</a>
+
+            <a href="Birds.html">Birds</a>
+
+            <a href="Cats.html">Cats</a>
+        
+            <a href="Dogs.html">Dogs</a>
+
+            <a href="Contact Us.html">Contact Us</a>
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const navLinks = document.querySelectorAll('nav a');
+                navLinks.forEach(link => {
+                    link.addEventListener('mouseover', function() {
+                        this.style.backgroundColor = 'grey';
+                    });
+                    link.addEventListener('mouseout', function() {
+                        this.style.backgroundColor = '';
+                    });
+                    
+                });
+            });
+        </script>
+
+        <div class="search-bar">
+
+            <input type="text" placeholder="Search...">
+            <button type="submit">Submit</button>
+
+        </div>
+
+    </header>
+
+
+
+    <div class="content">
+        <h2>Birds</h2>
+        <p>Birds are very intriguing creatures as they can range from birds as small as a Cuban bee hummingbird (about two inches long and a little over 1/20 of an ounce) to as large as an ostrich. While most birds fly, there are some that don't. Birds are amazing and each breed is unique in its own way, particularly when it comes to their relational needs and well-being.</p>
+        <p>Unfortunately, birds can experience sadness and depression just like humans. A number of root causes may be responsible for your bird's depression such as an illness (either physical or mental), losing its companion, or increasingly becoming bored. Some signs to help identify if your bird is experiencing depression may include the following:</p>
+        <ul>
+            <li>Reduced appetite</li>
+            <li>Becoming increasingly irritable</li>
+            <li>Aggressive behavior</li>
+            <li>Songs have a different, more solemn tone</li>
+        </ul>
+        <p>Be sure to tell your veterinarian if you see signs of any of these symptoms. Just like many illnesses, identifying and treating the symptoms earlier may drastically increase the lifespan of your birdie.</p>
+        <div class="image-placeholder">
+            <img src="images/bird1.png" alt="Bird Picture" style="width: 100%; max-width: 600px;">
+        </div>
+    </div>
+    <footer style="text-align: center; font-size: small;"> Copyright information </footer>
+</body>
+</html>
+
